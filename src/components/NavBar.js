@@ -36,7 +36,7 @@ const NavBar = () => {
                     <span className="nav-link">{cart[0].number+cart[1].number+cart[2].number}</span>
                     <div className="mini-checkout">
                         {cart.map(product => 
-                        // maps through the 'cart' array and returns the correct image, name, quantitiy and total price for each product
+                        // maps through the 'cart' array and returns the correct image, name, quantitiy and total price for each product. This acts as a 'mini' checkout cart
                         <section key={product.title} className="product-container mini-product-container">
                             <img src={imgSRC(product.title)} alt={product.title}></img>
                             <p className="product-price mini-product-price">€{product.price}</p>

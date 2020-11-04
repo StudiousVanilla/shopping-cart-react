@@ -98,6 +98,8 @@ const ShoppingPage = () => {
         updateCart(product, quantity)        
     }
 
+    // should have used .map() to dynamically adjust the state, dependent on the product title or another unique identifier. Current system does not allo for dynamic product addition to shopping page as 'product' identifier variables (0, 1 or 2) are hard coded.
+
 
     return ( 
         <main className="shopping-container">
