@@ -68,12 +68,28 @@ const ShoppingPage = () => {
         }
     }
 
-    const setProductNumber = (inputValue) =>{
-        setProducts([
-            {title:"pot", number:inputValue},
-            {title:"sofa", number:products[1].number},
-            {title:"table", number:products[2].number}
-        ])
+    const setProductNumber = (product,inputValue) =>{
+        if(product === 0){
+            setProducts([
+                {title:"pot", number:inputValue},
+                {title:"sofa", number:products[1].number},
+                {title:"table", number:products[2].number}
+            ])
+        }
+        else if(product === 1){
+            setProducts([
+                {title:"pot", number:products[0].number},
+                {title:"sofa", number:inputValue},
+                {title:"table", number:products[2].number}
+            ])
+        }
+        else if(product === 2){
+            setProducts([
+                {title:"pot", number:products[0].number},
+                {title:"sofa", number:products[1].number},
+                {title:"table", number:inputValue}
+            ])
+        }    
     }
 
     const addToCart = (product)  => e => {
@@ -97,7 +113,7 @@ const ShoppingPage = () => {
                             </span>
 
                             <input type="number" className="product-num" 
-                            value={products[0].number} onChange={(e)=>setProductNumber(e.target.value)}/>
+                            value={products[0].number} onChange={(e)=>setProductNumber(0,e.target.value)}/>
 
                             <span className="material-icons add-remove add" onClick={()=>increaseProductNumber(0)}>
                             add
@@ -123,7 +139,7 @@ const ShoppingPage = () => {
                             </span>
 
                             <input type="number" className="product-num" 
-                            value={products[1].number} onChange={(e)=>setProductNumber(e.target.value)}/>
+                            value={products[1].number} onChange={(e)=>setProductNumber(1,e.target.value)}/>
 
                             <span className="material-icons add-remove add" onClick={()=>increaseProductNumber(1)}>
                             add
@@ -147,7 +163,7 @@ const ShoppingPage = () => {
                             </span>
 
                             <input type="number" className="product-num" 
-                            value={products[2].number} onChange={(e)=>setProductNumber(e.target.value)}/>
+                            value={products[2].number} onChange={(e)=>setProductNumber(2,e.target.value)}/>
 
                             <span className="material-icons add-remove add" onClick={()=>increaseProductNumber(2)}>
                             add

@@ -15,6 +15,7 @@ function App() {
         <BrowserRouter>
           <NavBar/>
           <Switch>
+            <Route exact path="/shopping-cart-react" component={Home}/>
             <Route exact path="/" component={Home}/>
             <Route path="/shopping" component={ShoppingPage}/>
             <Route path="/checkout" component={CheckoutPage}/>
