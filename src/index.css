@@ -2,6 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 300px;
 }
 
 code {
@@ -109,6 +110,7 @@ nav{
 }
 
 .nav-logo{
+  margin-left: 10px;
   padding: 3px 7px;
   color: blue;
   background-color: yellow;
@@ -143,7 +145,7 @@ nav .material-icons{
 .mini-checkout{
   position: absolute;
   transition: 1s;
-  right: -20%;
+  right: -21%;
   top: 103%;
   height: 10vh;
   color: purple;
@@ -173,7 +175,6 @@ nav .material-icons{
 }
 
 .sofa-text{
-  
   font-family: 'Vallentua';
   font-size: 12vw;
   animation: wiggle 4s infinite linear;
@@ -184,6 +185,10 @@ nav .material-icons{
 	0% {transform:rotate(3deg);}
 	50% {transform:rotate(-3deg);}
 	100% {transform:rotate(3deg);}
+}
+
+.sofa-top{
+  margin-top: 15vw;
 }
 
 .sofa-bottom{
@@ -342,5 +347,68 @@ img{
 
 .mini-product-info{
   font-size: 1vw;
+}
+
+
+
+@media only screen and (max-width: 799px) {
+  .store-text {
+    font-size: 2em;
+  }
+
+  .home-text .material-icons{
+    font-size: 1.5em;
+  }
+
+  .nav-links-container{
+    width: 85%;
+  }
+
+  .mini-checkout{
+    display: none;
+  }
+
+  .shopping-container .product-price{
+    font-size: 2em;
+  }
+
+  .product-desc{
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+
+  .add-remove-form{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .add-remove{
+    font-size: 3em;
+  }
+
+  .product-num{
+    width: 20%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .add-cart{
+    font-size: 1.7em;
+    width: 100%;
+    margin: 10px 20px;
+  }
+
+  .product-price-total{
+    font-size: 2em;
+  }
+
+  .product-quantity{
+    font-size: 1.5em;
+  }
+
+  .cart-remove span{
+    position: relative;
+    right: 50%;
+  }
 }
 

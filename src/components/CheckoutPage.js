@@ -52,12 +52,11 @@ const CheckoutPage = () => {
                     </div>
                     <p className="product-price">€{product.price}</p>
                     <div className="product-info">
-                    
-                        <p className="product-price">X{product.number}</p>
-                        <p>{product.title}</p>
+                        <p className="product-price product-quantity">X{product.number}</p>
+                        <p className="product-desc">{product.title}</p>
                     </div>
                     <div className="product-info">
-                        <p className="product-price">€{product.number*product.price}</p>
+                        <p className="product-price product-price-total">€{product.number*product.price}</p>
                     </div>    
                 </section>
             )}

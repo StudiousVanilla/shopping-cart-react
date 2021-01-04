@@ -107,7 +107,7 @@ const ShoppingPage = () => {
                 <img src={potSRC} alt="pot"></img>
                 <div className="product-info">
                     <p className="product-price">€15</p>
-                    <p>Cooking pot</p>
+                    <p className="product-desc">Cooking pot</p>
                         <form className="add-remove-form" onSubmit={addToCart(0)}>
 
                             <span className="material-icons add-remove remove" onClick={()=>decreaseProductNumber(0)}>
@@ -133,7 +133,7 @@ const ShoppingPage = () => {
                 <img src={sofaSRC} alt="sofa"></img>
                 <div className="product-info">
                     <p className="product-price">€100</p>
-                    <p>Comfy Sofa</p>
+                    <p className="product-desc">Comfy Sofa</p>
                         <form className="add-remove-form" onSubmit={addToCart(1)}>
 
                             <span className="material-icons add-remove remove" onClick={()=>decreaseProductNumber(1)}>
@@ -157,7 +157,7 @@ const ShoppingPage = () => {
                 <img src={tableSRC} alt="table"></img>
                 <div className="product-info">
                     <p className="product-price">€40</p>
-                    <p>Work Table</p>
+                    <p className="product-desc">Work Table</p>
                         <form className="add-remove-form" onSubmit={addToCart(2)}>
 
                             <span className="material-icons add-remove remove" onClick={()=>decreaseProductNumber(2)}>
