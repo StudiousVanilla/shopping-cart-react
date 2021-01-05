@@ -7,8 +7,8 @@ React features in this app:
 - Routers, Switches and Links
 - Context to store and share data between components
 
-The web app is an imitation of the IKEA web site. It makes use of a custom noverlty font developed by IKEA.
+The web app is an imitation of the IKEA web site. It makes use of a custom novelty font developed by IKEA.
 
-This web app has been optimsedf for mobile devices.
+This web app has been optimised for mobile devices.
 
 Made by Oisín Byrne 2020
