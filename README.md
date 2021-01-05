@@ -1,8 +1,6 @@
 
 This web app was built to demonstrate proficency using the JS framework React
 
-The web app is a
-
 React features in this app:
 
 - Reusable components
