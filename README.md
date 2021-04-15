@@ -15,4 +15,4 @@ Link to live demo - https://studiousvanilla.github.io/shopping-cart-react/
 
 [![Screenshot-2021-01-07-at-12-57-29.png](https://i.postimg.cc/9MszGBqn/Screenshot-2021-01-07-at-12-57-29.png)](https://postimg.cc/62L9Kncr)
 
-Made by Oisín Byrne -  2020 - https://studiousvanilla.github.io/portfolio/
+Made by Oisín Byrne -  2020 - https://www.oisinbyrne.me/
